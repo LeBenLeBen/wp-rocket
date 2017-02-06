@@ -4,7 +4,7 @@ A [cookiecutter](https://github.com/audreyr/cookiecutter) template for WordPress
 * [WordPress](https://github.com/WordPress/WordPress) as a Git submodule
 * [Drifter](https://github.com/liip/drifter) to virtualize the development environment with Vagrant, by default with:
   * Apache
-  * PHP 7.2
+  * PHP 7.0
   * MySQL
 * [Gulp](http://gulpjs.com/) & [WebPack](https://webpack.js.org/) to manage your theme front-end dependencies
 * [Composer](https://getcomposer.org/) to easily manage plugins using [WP Packagist](https://wpackagist.org/)

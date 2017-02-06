@@ -5,5 +5,5 @@
   "admin_email": "foo@bar.com",
   "local_url": "wp-rocket.lo",
   "repository_url": "git@github.com:LeBenLeBen/wp-rocket.git",
-  "php_version": 7.2
+  "php_version": 7.0
 }
