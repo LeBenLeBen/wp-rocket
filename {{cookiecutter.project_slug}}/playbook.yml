@@ -1,0 +1,30 @@
+---
+# This is the file used by Ansible to provision your project
+# You can decide what you want to install in your box by choosing
+# various provided roles or add tasks to this file. If you need
+# more explanation, please refer to the drifter README
+
+- hosts: all
+  vars_files:
+   - parameters.yml
+  become: no
+
+  roles:
+    - { role: base }
+    - { role: git }
+    - { role: mysql }
+    - { role: php-apache }
+    - { role: gulp }
+    - { role: composer }
+    - { role: ruby }
+{% raw %}
+  tasks:
+    # Install WordPress CLI to ease setup and deployments
+    - name: Install WP-cli
+      apt:
+        deb: http://wp-cli.org/builds/deb/php-wpcli_latest_all.deb
+      become: yes
+    # Install Composer packages (WordPress plugins)
+    - name: Run Composer install
+      shell: cd {{ root_directory }} && composer.phar --quiet install
+{% endraw %}

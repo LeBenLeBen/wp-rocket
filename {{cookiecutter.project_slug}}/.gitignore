@@ -1,0 +1,10 @@
+/.vagrant/
+/node_modules
+/log
+/vendor
+/config/database.yml
+/content/plugins/*
+!/content/plugins/index.php
+/content/uploads/*
+!/content/uploads/index.php
+/wp-config.php

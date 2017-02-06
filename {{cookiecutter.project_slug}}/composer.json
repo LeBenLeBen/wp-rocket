@@ -1,0 +1,19 @@
+{
+    "name": "example",
+    "description": "My brilliant WordPress site",
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org"
+        }
+    ],
+    "extra": {
+      "installer-paths": {
+        "content/plugins/{$name}/": ["type:wordpress-plugin"],
+        "content/themes/{$name}/": ["type:wordpress-themes"]
+      }
+    },
+    "require": {
+        "wpackagist-plugin/akismet": "3.2"
+    }
+}

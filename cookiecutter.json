@@ -1,0 +1,9 @@
+{
+  "project_name": "WP Rocket",
+  "project_slug": "wp-rocket",
+  "admin_user": "admin",
+  "admin_email": "foo@bar.com",
+  "local_url": "wp-rocket.lo",
+  "repository_url": "git@github.com:LeBenLeBen/wp-rocket.git",
+  "php_version": 7.2
+}

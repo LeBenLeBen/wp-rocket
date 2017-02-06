@@ -1,0 +1,15 @@
+production:
+  host: localhost
+  database: db_name
+  username: db_user
+  password: 'db_pass'
+staging:
+  host: localhost
+  database: db_name
+  username: db_user
+  password: 'db_pass'
+local:
+  host: localhost
+  database: {{ cookiecutter.project_slug }}
+  username: {{ cookiecutter.project_slug }}
+  password: '{{ cookiecutter.project_slug }}'
