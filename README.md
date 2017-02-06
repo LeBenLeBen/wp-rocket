@@ -27,6 +27,9 @@ You are free to change Drifter’s configuration in `virtualization/playbook.yml
 # Create the box and run the provisioning
 vagrant up
 
+# Enter the box
+vagrant ssh
+
 # Install WordPress locally
 cap staging wp:setup:local
 ```
